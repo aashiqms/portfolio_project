@@ -1,0 +1,18 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>users</title>
+    </head>
+    <body>
+    <h1>here are users for portfolio App</h1>
+    {% if users_view_key %}
+
+    <ol>
+        {% for person in users_view_key %}
+        <li>User Info: </li>
+        <ul><li>First Name: {{person.first_name}}</li><li>Last Name: {{person.last_name}}</li><li>Email: {{person.email}}</li></ul>
+        {% endfor %}
+        {% endif %} </ol>
+    </body>
+    </html>
