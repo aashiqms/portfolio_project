@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class User(models.Model):
     first_name = models.CharField(max_length=120)
     last_name = models.CharField(max_length=120)
@@ -9,4 +8,3 @@ class User(models.Model):
     class Meta:
         verbose_name = "User"
         verbose_name_plural = "User"
-
