@@ -10,19 +10,28 @@
     <title>Document</title>
 </head>
 <body>
-  
-    
-<div class="jumbotron"><div class="container text-center">    <form action="" method="POST">
+
+
+<div class="jumbotron" style="color: white" ><div class="container text-center">    <form action="" method="POST">
     <h1>Sign up page</h1>
     <p></p>
     {{ form_key.as_p }}
     {% csrf_token %}
-    <input type="submit" class="btn btn-primary" name="" id="" value="submit"></div>
-</form></div>
+    <input type="submit" class="btn btn-light" name="" id="" value="submit"></div>
+</form>
+<p></p>
+</div>
 <style>
     .jumbotron{
-        background-color: lightblue;
+        height: 100vh;
+        background-color: #080940 !important;
+        font-family: "Segoe UI", serif
+    }
+    h1{
+        font-family: "Segoe UI"
     }
 </style>
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
 </body>
 </html>

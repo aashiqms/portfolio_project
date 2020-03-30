@@ -20,6 +20,7 @@ from portfolio_app import views
 
 urlpatterns = [
     path('users/', include('portfolio_app.urls')),
+    path('feedback/', views.feedback_form, name='feedback'),
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
 ]

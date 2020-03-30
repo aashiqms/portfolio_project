@@ -7,11 +7,15 @@
     <link rel="icon"
           type="svg"
           href="https://material.io/resources/icons/static/ic_icons_192px_light.svg">
+    <script src="jquery_index.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
 
 </head>
 <body>
-<div id="particle-container">
-    <nav class="navbar navbar-expand-md navbar-dark bg-custom">
+    <nav class="navbar navbar-expand-md navbar-dark bg-custom" id="navbar">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a class="navbar-brand" href="mailto: aashiqms@outlook.com?Subject=Hello%20again">aashiqms@outlook.com</a>
@@ -42,7 +46,6 @@
 
 
 
-
             </ul>
         </div>
         <div class="mx-auto order-0">
@@ -52,54 +55,33 @@
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="http://localhost:8000/feedback/">Give Feedback Anonymously</a>
+                </li>
                 <li class="nav-item active"><a class="nav-link" href="https://1drv.ms/w/s!AnENz7J1h5t1h7NNDnTmS5txnJNmsA?e=igvz0l">Resume</a></li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://localhost:8000/users/">Users</a>
+                    <a class="nav-link" href="http://localhost:8000/admin/">Admin</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://localhost:8000/admin/">Admin</a>
-                </li></ul>
+                    <a class="nav-link" href="http://localhost:8000/users/">Register Details</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="jumbotron"><div class="container text-center"><h1 class="heading_1">Personal Portfolio</h1><h1 class="heading_1">Aashiq MS</h1></div>
+
+    <div class="container"><h1 class="head1 text-center">Welcome to my website</h1>
+        <h1 class="head1 text-center">Aashiq M S</h1>
+        </div>
+
         <div class="container text-center"><img src="https://0podzq.dm.files.1drv.com/y4mmyISA0Pt5k4b600-c_aKPNY7w-OQ82qpmL5s6W6T4DrhLnigl56FQPFGE3K3jnMoF-kl6qyAkZmUtOjzdKmr63bL97rxHQDjNklirFy_TnqQgaDsPXaltvNlxpSJ5wSEiwdguzwsZJhvAwLV1g8lb6xedLGy2xdddSLIWCSbQvGeqLoJmy5efK2KgNBaPxstq5iojWP-ke4pIYA0D41nnA?width=660&height=440&cropmode=none" width="660" height="440" /></div></div>
-</div>
 </body>
 <style>
 
 
-    body {
-        background: #ecf3f3;
-    }
-
-    .particle {
-        position: absolute;
-        border-radius: 50%;
-    }
-
-    @for $i from 1 through 30 {
-        @keyframes particle-animation-#{$i} {
-    100% {
-        transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-    }
-    }
-
-    .particle:nth-child(#{$i}){
-        animation: particle-animation-#{$i} 60s infinite;
-        $size: random(5) + 5 + px;
-        opacity: random(100)/100;
-        height: $size;
-        width: $size;
-        animation-delay: -$i * .2s;
-        transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-        background: hsl(random(360), 70%, 50%);
-    }
-    }
-
-
-    .heading_1{
+    .head1{
         color: #080940;
-        font-family: 'Pacifico', cursive;
+        font-family: "Segoe UI"
         margin: 24px 0px 17px;
     }
 
@@ -107,6 +89,7 @@
         background-color: #080940;
     }
     .jumbotron {
+        font-family: "Segoe UI";
         background-color: #dedeff !important;
     }
 </style>
